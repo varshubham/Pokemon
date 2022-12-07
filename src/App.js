@@ -8,7 +8,7 @@ function App() {
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokename}`);
 
     if (response.status === 404) {
-        document.getElementById('card').innerHTML="Not Found"
+        document.getElementById('card').innerHTML="Pokemon Not Found"
     }
     else {
       const data = await response.json();
